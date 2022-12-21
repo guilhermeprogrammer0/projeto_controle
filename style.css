@@ -1,0 +1,174 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #e8f1f2;
+    ;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+header h1 {
+    font-size: 3.2em;
+    font-family: 'Bebas Neue';
+    color: #3B8C7D;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao {
+    width: 100%;
+    background-color: #3B8C7D;
+    height: 80px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.secao p {
+    color: #9FBFBF;
+    font-size: 1.4em;
+    font-family: 'Abel';
+    display: block;
+    transition: 0.5s;
+}
+
+.secao p:hover {
+    color: #b5dddd;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contas,
+.tabela {
+    display: block;
+    margin: auto;
+    width: 70%;
+    margin-top: 20px;
+    background-color: white;
+    height: 320px;
+    border-radius: 5px;
+
+}
+
+.tabela {
+    padding:15px;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.ativa {
+    display: none;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+label {
+    font-family: 'Abel';
+    font-size: 1.2em;
+    color: #315559;
+}
+
+.c-form {
+    width: 80%;
+    padding: 8px;
+    outline: 0;
+    border-radius: 0.2em;
+    border: solid 1px #3B8C7D;
+
+}
+
+.botoes {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    display: block;
+    padding: 0.6em;
+    border: none;
+    border-radius: 3px;
+    width: 60%;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.btn-salvar {
+    background-color: #315559;
+    color: #F2F2F2;
+}
+
+footer {
+
+    margin-top: 50px;
+    font-family: 'Abel';
+    font-size: 1.2em;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.erro {
+    border: solid 1px red;
+}
+
+.fa-regular,
+.fa-trash {
+    text-decoration: none;
+    color: #3B8C7D;
+}
+
+.fa-regular:hover,
+.fa-trash:hover {
+    color: #3B8C7D;
+}
+
+.total {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.total h5 {
+    color: #315559;
+    font-family: 'Arial';
+    text-align: center;
+    padding: 2px;
+}
